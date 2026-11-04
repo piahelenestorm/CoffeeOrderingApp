@@ -1,0 +1,23 @@
+
+# .NET / Visual Studio
+**/bin/
+**/obj/
+.vs/
+*.user
+
+# Angular / Node.js
+**/node_modules/
+**/dist/
+.angular/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+**/appsettings.Development.json
+**/appsettings.*.local.json
+
+# Editor and operating system
+.vscode/
+.DS_Store
+Thumbs.db
