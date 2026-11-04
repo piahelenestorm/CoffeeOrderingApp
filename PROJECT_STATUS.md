@@ -130,3 +130,43 @@ Phase 1 – Development environment and Git setup.
 
 \- GitHub: Not connected yet
 
+
+## Session 1 – First ASP.NET Core Web API
+
+**Status:** Completed
+
+### What We Accomplished
+- Initialized a Git repository with `main` as the default branch.
+- Created a GitHub repository and pushed the initial commit.
+- Created `CoffeeOrderingApp.API` in Visual Studio Community.
+- Configured the project to use .NET 10, ASP.NET Core Web API, and Controllers.
+- Added `nuget.org` as a NuGet package source to resolve a package restore error.
+- Successfully built the backend project.
+- Started the API with debugging enabled.
+- Confirmed that the API was listening on HTTP and HTTPS.
+- Tested `https://localhost:7005/WeatherForecast` and received a JSON response.
+- Stopped the debugging session successfully.
+
+### Concepts Learned
+- Git repositories, branches, staging, commits, and pushing to GitHub.
+- The differences between Build, Start Debugging, and Start Without Debugging.
+- Why a successful build does not guarantee correct runtime behavior.
+- The basics of localhost, HTTP endpoints, routing, and JSON responses.
+- How to use Visual Studio's Output window to inspect application startup.
+- Why a 404 response at `/` is expected when no route is configured for that URL.
+
+### Learning Guidelines
+- Explain every new file, its full path, where to create it, and its purpose.
+- Explain code step by step, including relevant C# concepts.
+- Always explain which Build, Run, or Debug action to use and why.
+- Compare C# concepts with Angular and TypeScript when helpful.
+- Introduce debugging techniques early and practice them regularly.
+- Ask one interview-style comprehension question at a time.
+- Use English for project documentation, commit messages, and code comments.
+
+### Next Session
+- Explore the generated ASP.NET Core project structure.
+- Review `Program.cs`, `WeatherForecast.cs`, and `WeatherForecastController.cs`.
+- Learn foundational C# concepts using the existing project code.
+- Begin replacing the WeatherForecast example with Coffee Ordering functionality.
+
