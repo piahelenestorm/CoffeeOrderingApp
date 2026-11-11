@@ -1,0 +1,22 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+GET https://localhost:7005/api/coffees
+
+###
+
+GET https://localhost:7005/api/coffees/4
+
+###
+
+POST https://localhost:7005/api/coffees
+Content-Type: application/json
+
+{
+  "id": 4,
+  "name": "Americano",
+  "price": 30
+}
+
+###
+
+DELETE https://localhost:7005/api/coffees/2

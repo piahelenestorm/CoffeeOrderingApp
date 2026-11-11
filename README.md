@@ -2,7 +2,7 @@
 
 
 
-A fullstack coffee ordering application built as a learning project.
+A fullstack coffee ordering application.
 
 
 
