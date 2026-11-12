@@ -41,5 +41,20 @@ namespace CoffeeOrderingApp.API.Services
 
             return true;
         }
+
+        public bool UpdatedCoffee(int id, Coffee updatedCoffee)
+        {
+            Coffee? existingCoffee = _coffees.FirstOrDefault(c => c.Id == id);
+
+            if(existingCoffee == null)
+            {
+                return false;
+            }
+
+            existingCoffee.Name = updatedCoffee.Name;
+            existingCoffee.Price = updatedCoffee.Price;
+
+            return true;
+        }
     }
 }
