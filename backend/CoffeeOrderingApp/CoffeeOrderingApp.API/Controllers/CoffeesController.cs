@@ -60,5 +60,19 @@ namespace CoffeeOrderingApp.API.Controllers
 
             return NoContent();
         }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, Coffee updatedCoffee)
+        {
+            bool isUpdated = _coffeeService.UpdatedCoffee(id, updatedCoffee);
+
+            if (!isUpdated)
+            {
+                return NotFound();
+            }
+
+            return NoContent();
+        }
     }
+
 }

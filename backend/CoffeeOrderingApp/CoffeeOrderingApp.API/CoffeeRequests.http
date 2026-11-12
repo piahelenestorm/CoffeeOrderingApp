@@ -20,3 +20,14 @@ Content-Type: application/json
 ###
 
 DELETE https://localhost:7005/api/coffees/2
+
+###
+
+PUT https://localhost:7005/api/coffees/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Vanilla Latte",
+  "price": 39
+}
